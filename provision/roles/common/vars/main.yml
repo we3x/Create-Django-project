@@ -4,4 +4,4 @@ packages:
 pip_packages:
   - name: Django
 
-nameOfProject: '{{ nameOfProject}}'
+nameOfProject: "{{ lookup('file', '../nameOfProject.txt')}}"
