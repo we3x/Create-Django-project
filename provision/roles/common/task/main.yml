@@ -4,3 +4,6 @@
   pip:
     name: "{{ item.name }}"
     executable: pip3
+
+- name: create django project
+  command: python3 /usr/local/bin/django-admin.py startproject "{{ nameOfProject }}" chdir= /vagrant
